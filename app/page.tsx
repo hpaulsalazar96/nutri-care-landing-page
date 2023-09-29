@@ -1,9 +1,14 @@
-const Home  = () => {
+import { Layout } from "@/components/Layout/Layout"
+import { SeoHead } from "@/components/SeoHead"
+
+const Home = () => {
     return(
         <>
-            <h1>
-                hello there
-            </h1>
+            <SeoHead title='Nutri Care Nutritional Landing Page'/>
+            <Layout>
+                <h1>Componentes</h1>
+
+            </Layout>
         </>
     )
 }
