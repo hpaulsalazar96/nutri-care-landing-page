@@ -9,10 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^2.0.18",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "react-scroll": "^1.8.9"
+    "react-scroll": "^1.8.9",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@types/node": "latest",
