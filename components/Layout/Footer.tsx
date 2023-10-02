@@ -7,7 +7,7 @@ import logoNC from "../../public/assets/Logo.svg";
 import { MapPinIcon, PhoneIcon, EnvelopeIcon } from "@heroicons/react/20/solid";
 import Image from 'next/image';
 import Link from "next/link";
-import { socialLinks } from './../misc/socialLinks'
+import { socialLinks } from '../utils/socialLinks'
 import { useEffect, useState } from "react";
 import { SocialLink } from "../misc/SocialLink";
 

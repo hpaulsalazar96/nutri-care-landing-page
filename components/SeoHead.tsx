@@ -2,7 +2,7 @@
 
 import Head from "next/head";
 import { usePathname } from "next/navigation";
-import { favicons, defaultMeta } from './misc/seoAux'
+import { favicons, defaultMeta } from './utils/seoAux'
 
 /*interface favicon {
     rel: string,
