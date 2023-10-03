@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from 'next/image';
 
-export const SocialLink = ({url, path, description}: {url:string, path:string, description:string}) => {
+export const SocialLink = ({ url, path, description }: { url: string, path: string, description: string }) => {
 
     return (
         <>
