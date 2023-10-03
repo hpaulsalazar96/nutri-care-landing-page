@@ -137,10 +137,11 @@ export const Header = () => {
                         </LinkScroll>
                     </ul>
                     <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
-                        <Link href="/">
+                        {/*<Link href="/">
                             Sign In
-                        </Link>
-                        <ButtonOutline>Sign Up</ButtonOutline>
+                        </Link>*/}
+                        <ButtonOutline addClass="flex justify-center items-center rounded-2xl ml-2">Apps</ButtonOutline>
+                        <ButtonPrimary addClass="w-10 h-10 flex justify-center items-center rounded-l-full rounded-r-full ml-2">Agendar</ButtonPrimary>
                     </div>
                 </nav>
             </header>
