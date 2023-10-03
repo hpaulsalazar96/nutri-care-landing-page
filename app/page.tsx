@@ -1,5 +1,6 @@
 import { Layout } from "@/components/Layout/Layout"
 import { SeoHead } from "@/components/SeoHead"
+import { Testimonial } from "@/components/Testimonial"
 
 const Home = () => {
     return(
@@ -8,7 +9,7 @@ const Home = () => {
             <Layout>
                 <h1>Componentes</h1>
                 <h1>Componentes</h1>
-                
+                <Testimonial/>
             </Layout>
         </>
     )
