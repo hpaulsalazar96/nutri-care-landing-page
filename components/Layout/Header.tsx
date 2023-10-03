@@ -7,6 +7,7 @@ import { ButtonOutline } from "../misc/ButtonOutline"
 import { ButtonPrimary } from "../misc/ButtonPrimary"
 import logoNC from '@/public/assets/Logo.svg'
 import { useEffect, useState } from "react"
+import { MenuDropdown } from "../misc/MenuDropdown";
 
 export const Header = () => {
 
@@ -26,13 +27,13 @@ export const Header = () => {
             <header className={"fixed top-0 w-full  z-30 bg-white-500 transition-all" + (scrollActive ? " shadow-md pt-0" : " pt-2")}>
                 <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
                     <div className="col-start-1 col-end-2 flex items-center">
-                            <Image
-                                priority
-                                src={logoNC}
-                                alt="Nutri Care Logo"
-                                className="h-12 w-auto"
-                            />
-                        </div>
+                        <Image
+                            priority
+                            src={logoNC}
+                            alt="Nutri Care Logo"
+                            className="h-12 w-auto"
+                        />
+                    </div>
                     <ul className="hidden lg:flex col-start-4 col-end-8 text-nutricare-200  items-center">
                         <LinkScroll
                             activeClass="active"
@@ -138,9 +139,10 @@ export const Header = () => {
                     </ul>
                     <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
                         {/*<Link href="/">
-                            Sign In
+                            Sign In<ButtonOutline addClass="flex justify-center items-center rounded-2xl ml-2">Apps</ButtonOutline>
                         </Link>*/}
-                        <ButtonOutline addClass="flex justify-center items-center rounded-2xl ml-2">Apps</ButtonOutline>
+
+                        <MenuDropdown></MenuDropdown>
                         <ButtonPrimary addClass="w-10 h-10 flex justify-center items-center rounded-l-full rounded-r-full ml-2">Agendar</ButtonPrimary>
                     </div>
                 </nav>
