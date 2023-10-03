@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
 type Props = {
-    children: React.ReactNode
-    className: string
+    children?: React.ReactNode
+    className?: string
 };
 
 export const ScrollAnimationWrapper: React.FC<Props> = ({ children, className }) => {

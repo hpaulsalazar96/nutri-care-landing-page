@@ -7,7 +7,7 @@ import { useMemo, useState } from "react"
 import { testimonialsList } from "./utils/testimonialsList"
 import { ScrollAnimationWrapper } from "./misc/ScrollAnimationWrapper";
 import { motion } from "framer-motion";
-import getScrollAnimation from "./utils/getScrollAnimation";
+import { getScrollAnimation } from "./utils/getScrollAnimation";
 
 export const Testimonial = ({ }) => {
 

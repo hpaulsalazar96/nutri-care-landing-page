@@ -1,4 +1,4 @@
-export default function getScrollAnimation() {
+export const getScrollAnimation = () => {
 	return ({
     offscreen: {
       y: 150,

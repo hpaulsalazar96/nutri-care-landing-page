@@ -40,7 +40,7 @@ export const Footer = () => {
 
     return (
         <>
-            <div className="bg-white-300 pt-14 pb-14">
+            <div className="bg-white-300 pt-44 pb-14">
                 <div className={screenSize}>
                     <div className="row-span-2 sm:col-span-4 col-start-1 col-end-4 sm:col-end-5 flex flex-col mx-2">
                         <div className="">

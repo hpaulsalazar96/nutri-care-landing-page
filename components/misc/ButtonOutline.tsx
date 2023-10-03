@@ -1,6 +1,6 @@
 type Props = {
-  addClass: string,
-  children: React.ReactNode
+  addClass?: string,
+  children?: React.ReactNode
 }
 
 export const ButtonOutline: React.FC<Props> = ({ children, addClass }) => {
