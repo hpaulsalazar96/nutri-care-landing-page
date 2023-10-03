@@ -5,15 +5,16 @@ import { useMemo } from "react";
 import { motion } from "framer-motion";
 import { getScrollAnimation } from "./utils/getScrollAnimation";
 import { ScrollAnimationWrapper } from "./misc/ScrollAnimationWrapper";
+import { FireIcon } from "@heroicons/react/20/solid";
 
 const features = [
-    "Asesoramientos personalizado",
+    "Asesoramiento Personalizado",
     "Evaluaciones Regulares",
     "Seguimiento Virtual",
     "Acceso a la App de Nutri Care",
-    "Asesoramientos personalizado",
-    "Evaluaciones Regulares",
-    "Seguimiento Virtual",
+    "Acceso a Especialistas (Pediatria y Jeriatrico)",
+    "Plan de Alimentacion Diario",
+    "Recompensas por Cumplimiento de Metas",
 ]
 
 export const Feature = () => {
@@ -26,31 +27,31 @@ export const Feature = () => {
         >
             <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 p  y-8 my-12">
                 <ScrollAnimationWrapper className="flex w-full justify-end">
-                    <motion.div className="h-full w-full p-4" variants={scrollAnimation}>
+                    <motion.div className="h-full w-full mt-8" variants={scrollAnimation}>
                         <Image
                             src="/assets/portrait.png"
                             alt="portrait"
                             layout="responsive"
                             quality={100}
-                            height={414}
-                            width={508}
+                            width={612}
+                            height={383}
+                            className="rounded-lg"
                         />
                     </motion.div>
                 </ScrollAnimationWrapper>
                 <ScrollAnimationWrapper>
 
                     <motion.div className="flex flex-col items-end justify-center ml-auto w-full lg:w-9/12" variants={scrollAnimation}>
-                        <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
+                        <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-nutricare-200">
                             Contamos con Servicios Especializados
                         </h3>
-                        <p className="my-2 text-black-500">
-                            Con el fin de brindar a nuestros clientes el mejor asesoramiento <br />
-                            Ofrecemos los siguientes servicios
+                        <p className="my-2 text-nutricare-200">
+                            Con el fin de brindar a nuestros clientes el mejor servicio te ofrecemos<br />
                         </p>
-                        <ul className="text-black-500 self-start list-inside ml-8 py-2">
+                        <ul className="text-nutricare-200 self-start list-inside ml-8 py-2">
                             {features.map((feature, index) => (
                                 <motion.li
-                                    className="relative circle-check custom-list py-2"
+                                    className="relative circle-check custom-list py-2 hover:text-nutricare-100"
                                     custom={{ duration: 2 + index }}
                                     variants={scrollAnimation}
                                     key={feature}
@@ -60,7 +61,10 @@ export const Feature = () => {
                                             duration: .2
                                         }
                                     }}>
-                                    {feature}
+                                    <div className="flex hover:fill-nutricare-100">
+                                        <FireIcon className="h-6 w-6 fill-nutricare-200 hover:fill-nutricare-100  transition ease-in-out delay-25 mr-2" />
+                                        {feature}
+                                    </div>
                                 </motion.li>
                             )
                             )}
