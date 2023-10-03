@@ -120,19 +120,19 @@ export const Footer = () => {
                         </p>
                         <ul className="text-nutricare-200 ">
                             <li className="my-2 hover:text-nutricare-100 cursor-pointer transition-all">
-                                Acerca de{" "}
+                                <Link href="#about" scroll={true}>Acerca de{" "}</Link>
                             </li>
                             <li className="my-2 hover:text-nutricare-100 cursor-pointer transition-all">
-                                Servicios{" "}
+                                <Link href="#feature" scroll={true}>Servicios{" "}</Link>
                             </li>
                             <li className="my-2 hover:text-nutricare-100 cursor-pointer transition-all">
-                                Testimonios{" "}
+                                <Link href="#testimonial" scroll={true}>Testimonios{" "}</Link>
                             </li>
                             <li className="my-2 hover:text-nutricare-100 cursor-pointer transition-all">
-                                Precios{" "}
+                                <Link href="#pricing" scroll={true}>Precios{" "}</Link>
                             </li>
                             <li className="my-2 hover:text-nutricare-100 cursor-pointer transition-all">
-                                Agendar{" "}
+                                <Link href="#book" scroll={true}>Agendar{" "}</Link>
                             </li>
                         </ul>
                     </div>
