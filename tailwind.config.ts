@@ -18,6 +18,7 @@ const config: Config = {
       orange: "0px 20px 20px -15px rgba(245,56,56,0.81) ",
       "orange-md": "0px 20px 40px -15px rgba(245,56,56,0.81) ",
       "nutricare-md": "0 0 0.15rem #07cce3",
+      "nutricare-xl": "0.2rem 0.5rem 1.15rem #1F2E41",
       none: "none",
     },
     colors: {
