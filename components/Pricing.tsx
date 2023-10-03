@@ -12,7 +12,9 @@ export const Pricing = ({ }) => {
 
     return (
         <>
-            <div className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14" id="pricing">
+            <div className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
+                id="pricing"
+            >
                 <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
                     <div className="flex flex-col w-full">
                         <ScrollAnimationWrapper>
@@ -128,7 +130,7 @@ export const Pricing = ({ }) => {
                             </ScrollAnimationWrapper>
                         </div>
                     </div>
-                    <ModalButton/>
+                    <ModalButton />
                 </div>
 
             </div>

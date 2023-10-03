@@ -1,7 +1,7 @@
 'use client'
 
 import facebookIcon from "../../public/assets/Icon/facebook.svg";
-import twitterIcon from "../../public/assets/Icon/twitter.svg";
+import whatsappIcon from "../../public/assets/Icon/whatsapp.svg";
 import instagramIcon from "../../public/assets/Icon/instagram.svg";
 import logoNC from "../../public/assets/Logo.svg";
 import { MapPinIcon, PhoneIcon, EnvelopeIcon } from "@heroicons/react/20/solid";
@@ -15,7 +15,7 @@ export const Footer = () => {
 
     const [screenSize, setscreenSize] = useState('');
     const [smallScreen, setSmallScreen] = useState(false);
-    const { instagramLink, facebookLink, twitterLink } = socialLinks()
+    const { instagramLink, facebookLink, whatsappLink } = socialLinks()
 
     useEffect(() => {
         const updateScreenSize = () => {
@@ -56,12 +56,12 @@ export const Footer = () => {
                             <strong>Nutricare</strong> es una agencia de consultoría nutricional que brinda un seguimiento nutricional integral  a sus pacientes, de manera <strong>presencial</strong> y <strong>virtual</strong>.
                         </p>
                         {smallScreen ?
-                            (<div className="flex w-full mt-6 mb-8 flex items-center">
+                            (<div className="flex w-full mt-6 mb-8 flex items-center ml-2">
                                 <p className="text-nutricare-200 text-sm">Siguenos:</p>
                                 <div className="flex w-full">
+                                    <SocialLink url={whatsappLink} path={whatsappIcon} description="Siguenos en Whatsapp" />
                                     <SocialLink url={instagramLink} path={instagramIcon} description="Siguenos en Instagram" />
                                     <SocialLink url={facebookLink} path={facebookIcon} description="Siguenos en Facebook" />
-                                    <SocialLink url={twitterLink} path={twitterIcon} description="Siguenos en Twitter" />
                                 </div>
                             </div>
                             )
@@ -70,8 +70,8 @@ export const Footer = () => {
                         }
                     </div>
 
-                    <div className="row-span-3 sm:col-span-3 sm:col-start-9 sm:col-end-12 flex flex-col ">
-                        <p className="text-nutricare-200 mb-2 font-medium text-bse">
+                    <div className="row-span-3 sm:col-span-3 sm:col-start-9 sm:col-end-12 flex flex-col px-4 ">
+                        <p className="text-nutricare-200 mb-2 font-medium text-base">
                             <strong>
                                 Contactos
                             </strong>
@@ -102,9 +102,9 @@ export const Footer = () => {
                                     <div className="flex w-full mt-6 mb-8 flex items-center">
                                         <p className="text-nutricare-200 text-sm">Siguenos:</p>
                                         <div className="flex w-full">
+                                            <SocialLink url={whatsappLink} path={whatsappIcon} description="Siguenos en Whatsapp" />
                                             <SocialLink url={instagramLink} path={instagramIcon} description="Siguenos en Instagram" />
                                             <SocialLink url={facebookLink} path={facebookIcon} description="Siguenos en Facebook" />
-                                            <SocialLink url={twitterLink} path={twitterIcon} description="Siguenos en Twitter" />
                                         </div>
                                     </div>
                                 )
@@ -112,24 +112,27 @@ export const Footer = () => {
                                 ('')
                         }
                     </div>
-                    <div className=" row-span-3 sm:col-span-3 sm:col-start-6 sm:col-end-9 flex flex-col mx-6">
+                    <div className=" row-span-3 sm:col-span-3 sm:col-start-6 sm:col-end-9 flex flex-col mx-3">
                         <p className="text-nutricare-200 mb-2 font-medium text-base ">
                             <strong>
-                                Acceso Rápido
+                                Ver:
                             </strong>
                         </p>
                         <ul className="text-nutricare-200 ">
                             <li className="my-2 hover:text-nutricare-100 cursor-pointer transition-all">
-                                Download{" "}
+                                Acerca de{" "}
                             </li>
                             <li className="my-2 hover:text-nutricare-100 cursor-pointer transition-all">
-                                Pricing{" "}
+                                Servicios{" "}
                             </li>
                             <li className="my-2 hover:text-nutricare-100 cursor-pointer transition-all">
-                                Locations{" "}
+                                Testimonios{" "}
                             </li>
                             <li className="my-2 hover:text-nutricare-100 cursor-pointer transition-all">
-                                Server{" "}
+                                Precios{" "}
+                            </li>
+                            <li className="my-2 hover:text-nutricare-100 cursor-pointer transition-all">
+                                Agendar{" "}
                             </li>
                         </ul>
                     </div>
