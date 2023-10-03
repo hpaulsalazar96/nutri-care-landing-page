@@ -124,6 +124,17 @@ export const Header = () => {
                         >
                             Agendar
                         </LinkScroll>
+                        <LinkScroll
+                            activeClass="active"
+                            to="footer"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            onSetActive={() => {
+                                setActiveLink(null);
+                            }}
+                        >
+                        </LinkScroll>
                     </ul>
                     <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
                         <Link href="/">
@@ -297,6 +308,17 @@ export const Header = () => {
                                 />
                             </svg>
                             Cita
+                        </LinkScroll>
+                        <LinkScroll
+                            activeClass="active"
+                            to="footer"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            onSetActive={() => {
+                                setActiveLink(null);
+                            }}
+                        >
                         </LinkScroll>
                     </ul>
                 </div>
