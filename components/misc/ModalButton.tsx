@@ -8,7 +8,7 @@ export const ModalButton = () => {
     const scrollAnimation = useMemo(() => getScrollAnimation(), []);
     return (
         <>
-            <div id="book">
+            <div className="pt-36 mb-12" id="book">
                 <ScrollAnimationWrapper className="relative w-full mt-2 mb-8">
                     <motion.div variants={scrollAnimation} custom={{ duration: 3 }}>
                         <div className="absolute rounded-xl sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500 border-2 border-nutricare-100">

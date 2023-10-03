@@ -1,7 +1,7 @@
 'use client'
 
 import Image from "next/image";
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { getScrollAnimation } from "./utils/getScrollAnimation";
 import { ScrollAnimationWrapper } from "./misc/ScrollAnimationWrapper";
@@ -20,11 +20,29 @@ const features = [
 export const Feature = () => {
     const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
+    const [smallScreen, setSmallScreen] = useState(false);
+
+    useEffect(() => {
+        const updateScreenSize = () => {
+            if (window.innerWidth >= 720) {
+                setSmallScreen(false)
+            } else {
+                setSmallScreen(true)
+            }
+        }
+        updateScreenSize();
+        window.addEventListener('resize', updateScreenSize);
+        return () => {
+            window.removeEventListener('resize', updateScreenSize);
+        };
+    }, []);
+
     return (
         <div
-            className="max-w-screen-xl mt-8 mb-6 sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-16 mx-auto"
+            className="max-w-screen-xl mt-8 mb-6 sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-16 mx-auto mb-12"
             id="feature"
         >
+            {!smallScreen ? <div className="pt-28"/> :<div className="pt-4"/>}
             <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 p  y-8 my-12">
                 <ScrollAnimationWrapper className="flex w-full justify-end">
                     <motion.div className="h-full w-full mt-8" variants={scrollAnimation}>

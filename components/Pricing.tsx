@@ -12,7 +12,7 @@ export const Pricing = ({ }) => {
 
     return (
         <>
-            <div className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
+            <div className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14 py-12 pt-32 mb-12"
                 id="pricing"
             >
                 <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
