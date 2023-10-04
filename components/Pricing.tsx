@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { getScrollAnimation } from "./utils/getScrollAnimation";
 import { ScrollAnimationWrapper } from "./misc/ScrollAnimationWrapper";
 import { useMemo } from "react";
-import { ModalButton } from "./misc/ModalButton";
+import { ModalButton } from "./Book";
 
 export const Pricing = ({ }) => {
     const scrollAnimation = useMemo(() => getScrollAnimation(), []);
@@ -89,7 +89,7 @@ export const Pricing = ({ }) => {
                                         <strong>Diagnóstico y Asesoría Nutricional{" "}</strong>
                                     </p>
                                     <p className="flex flex-col list-inside items-start text-left text-nutricare-200 flex-grow">
-                                        Tras evaluar tu caso obtendrás guias para alcanzar tu peso ideal y mejorar tu salud. Obtendrás acceso a una guía paso a paso para cambiar tus hábitos y logras tus objetivos
+                                        Tras evaluar tu caso obtendrás guias para alcanzar tu peso ideal y mejorar tu salud. Obtendrás acceso a una guía paso a paso para cambiar tus hábitos y alcanzar tus objetivos
                                     </p>
                                     <div className="flex flex-col w-full justify-center mb-2 flex-none mt-2">
                                         <p className="text-2xl text-nutricare-200 text-center ">

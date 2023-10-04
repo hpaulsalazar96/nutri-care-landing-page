@@ -1,14 +1,12 @@
 'use client'
 
-import Link from "next/link"
 import { Link as LinkScroll } from 'react-scroll'
 import Image from 'next/image';
-import { ButtonOutline } from "../misc/ButtonOutline"
-import { ButtonPrimary } from "../misc/ButtonPrimary"
 import logoNC from '@/public/assets/Logo.svg'
 import { useEffect, useState } from "react"
 import { MenuDropdown } from "../misc/MenuDropdown";
-import { ModalCalendly } from "../misc/ModalCalendly";
+import { ModalCalendly } from "../modals/ModalCalendly";
+import { InformationCircleIcon, SwatchIcon, UserGroupIcon, CurrencyDollarIcon, BookmarkIcon } from "@heroicons/react/20/solid";
 
 export const Header = () => {
 
@@ -145,14 +143,14 @@ export const Header = () => {
 
                         <MenuDropdown></MenuDropdown>
                         <ModalCalendly addClass="w-12 h-10 flex justify-center items-center rounded-l-full rounded-r-full ml-2">Agendar</ModalCalendly>
-                        
-                        
+
+
                     </div>
                 </nav>
             </header>
 
             {/* Mobile Navigation */}
-            <nav className="fixed lg:hidden bottom-0 left-0 right-0 z-20 px-4 sm:px-8 shadow-t ">
+            <nav className="fixed lg:hidden bottom-0 left-0 right-0 z-20 shadow-t ">
                 <div className="bg-white-500 sm:px-3">
                     <ul className="flex w-full justify-between items-center text-nutricare-200">
                         <LinkScroll
@@ -167,24 +165,16 @@ export const Header = () => {
                             className={
                                 "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
                                 (activeLink === "about"
-                                    ? "  border-nutricare-100 text-nutricare-100"
+                                    ? "  border-nutricare-100 text-nutricare-200"
                                     : " border-transparent")
                             }
                         >
-                            <svg
-                                className="w-6 h-6"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth={2}
-                                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                                />
-                            </svg>
+                            <InformationCircleIcon
+                                className={"h-6 w-6 fill-nutricare-200 hover:fill-nutricare-100 transition ease-in-out delay-25" +
+                                    (activeLink === "about"
+                                        ? " fill-nutricare-100"
+                                        : " fill-nutricare-200")
+                                } />
                             Acerca
                         </LinkScroll>
                         <LinkScroll
@@ -199,24 +189,16 @@ export const Header = () => {
                             className={
                                 "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
                                 (activeLink === "feature"
-                                    ? "  border-nutricare-100 text-nutricare-100"
+                                    ? "  border-nutricare-100 text-nutricare-200"
                                     : " border-transparent ")
                             }
                         >
-                            <svg
-                                className="w-6 h-6"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth={2}
-                                    d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
-                                />
-                            </svg>
+                            <SwatchIcon
+                                className={"h-6 w-6 fill-nutricare-200 hover:fill-nutricare-100 transition ease-in-out delay-25" +
+                                    (activeLink === "feature"
+                                        ? " fill-nutricare-100"
+                                        : " fill-nutricare-200")
+                                } />
                             Servicios
                         </LinkScroll>
                         <LinkScroll
@@ -229,26 +211,18 @@ export const Header = () => {
                                 setActiveLink("testimonial");
                             }}
                             className={
-                                "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
+                                "mx-1 sm:mx-2 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
                                 (activeLink === "testimonial"
-                                    ? "  border-nutricare-100 text-nutricare-100"
+                                    ? "  border-nutricare-100 text-nutricare-200"
                                     : " border-transparent ")
                             }
                         >
-                            <svg
-                                className="w-6 h-6"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth={2}
-                                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-                                />
-                            </svg>
+                            <UserGroupIcon
+                                className={"h-6 w-6 fill-nutricare-200 hover:fill-nutricare-100 transition ease-in-out delay-25" +
+                                    (activeLink === "testimonial"
+                                        ? " fill-nutricare-100"
+                                        : " fill-nutricare-200")
+                                } />
                             Testimonios
                         </LinkScroll>
                         <LinkScroll
@@ -263,24 +237,16 @@ export const Header = () => {
                             className={
                                 "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
                                 (activeLink === "pricing"
-                                    ? "  border-nutricare-100 text-nutricare-100"
+                                    ? "  border-nutricare-100 text-nutricare-200"
                                     : " border-transparent ")
                             }
                         >
-                            <svg
-                                className="w-6 h-6"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth={2}
-                                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                                />
-                            </svg>
+                            <CurrencyDollarIcon
+                                className={"h-6 w-6 fill-nutricare-200 hover:fill-nutricare-100 transition ease-in-out delay-25" +
+                                    (activeLink === "pricing"
+                                        ? " fill-nutricare-100"
+                                        : " fill-nutricare-200")
+                                } />
                             Precios
                         </LinkScroll>
                         <LinkScroll
@@ -295,24 +261,16 @@ export const Header = () => {
                             className={
                                 "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
                                 (activeLink === "book"
-                                    ? "  border-nutricare-100 text-nutricare-100"
+                                    ? "  border-nutricare-100 text-nutricare-200"
                                     : " border-transparent ")
                             }
                         >
-                            <svg
-                                className="w-6 h-6"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth={2}
-                                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-                                />
-                            </svg>
+                            <BookmarkIcon
+                                className={"h-6 w-6 fill-nutricare-200 hover:fill-nutricare-100 transition ease-in-out delay-25" +
+                                    (activeLink === "book"
+                                        ? " fill-nutricare-100"
+                                        : " fill-nutricare-200")
+                                } />
                             Cita
                         </LinkScroll>
                         <LinkScroll

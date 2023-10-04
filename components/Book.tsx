@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
-import { ScrollAnimationWrapper } from "./ScrollAnimationWrapper"
-import { ButtonPrimary } from "./ButtonPrimary"
-import { getScrollAnimation } from "../utils/getScrollAnimation";
+import { ScrollAnimationWrapper } from "./misc/ScrollAnimationWrapper"
+import { ButtonPrimary } from "./buttons/ButtonPrimary"
+import { getScrollAnimation } from "./utils/getScrollAnimation";
 import { useMemo } from "react";
 
 export const ModalButton = () => {

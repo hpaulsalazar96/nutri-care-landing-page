@@ -2,7 +2,7 @@
 
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
-import { ButtonPrimary } from './ButtonPrimary'
+import { ButtonPrimary } from './../buttons/ButtonPrimary'
 
 type Props = {
     children:React.ReactNode,
