@@ -2,6 +2,7 @@
 
 @tailwind base;
 @tailwind components;
+@tailwind utilities;
 
 html {
   font-family: "Rubik", sans-serif;
@@ -63,7 +64,17 @@ li.check:before {
   @apply bg-nutricare-100 rounded-l-full rounded-r-full w-12;
 }
 
-/* purgecss end ignore */
-@tailwind utilities;
-/* purgecss start ignore */
-/* purgecss end ignore */
+@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+  }
+}
