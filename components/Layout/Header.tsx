@@ -7,7 +7,7 @@ import { useEffect, useState } from "react"
 import { MenuDropdown } from "../misc/MenuDropdown";
 import { ModalCalendly } from "../modals/ModalCalendly";
 import { InformationCircleIcon, SwatchIcon, UserGroupIcon, CurrencyDollarIcon, BookmarkIcon } from "@heroicons/react/20/solid";
-import { ScrollToLink, ScrollToLinkMobile } from './../scrollers/ScrollToLink'
+import { ScrollToLink, ScrollToLinkMobile, ScrollToUnselect } from './../scrollers/ScrollToLink'
 
 export const Header = () => {
 
@@ -50,6 +50,7 @@ export const Header = () => {
                         <ScrollToLink name='book' setActive={setActiveLink} active={activeLink}>
                             Agendar
                         </ScrollToLink>
+                        <ScrollToUnselect name='footer' setActive={setActiveLink}/>
                     </ul>
                     <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
                         <MenuDropdown></MenuDropdown>
@@ -77,17 +78,7 @@ export const Header = () => {
                         <ScrollToLinkMobile name='book' setActive={setActiveLink} active={activeLink} Icon={UserGroupIcon}>
                         Cita
                         </ScrollToLinkMobile>
-                        <LinkScroll
-                            activeClass="active"
-                            to="footer"
-                            spy={true}
-                            smooth={true}
-                            duration={500}
-                            onSetActive={() => {
-                                setActiveLink(null);
-                            }}
-                        >
-                        </LinkScroll>
+                        <ScrollToUnselect name='footer' setActive={setActiveLink}/>
                     </ul>
                 </div>
             </nav>

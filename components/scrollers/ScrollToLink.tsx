@@ -1,7 +1,7 @@
 import { Link as LinkScroll } from 'react-scroll'
 
 type Props = {
-    children: React.ReactNode,
+    children?: React.ReactNode,
     name: string,
     setActive?: any,
     active?: string | null,
@@ -79,6 +79,25 @@ export const ScrollToLinkMobile: React.FC<Props> = ({ children, name, setActive,
                     } />
                 {children}
             </LinkScroll>
+        </>
+    )
+}
+
+export const ScrollToUnselect: React.FC<Props> = ({ name, setActive }) => {
+    return (
+        <>
+            <li className="my-2 hover:text-nutricare-100 cursor-pointer transition-all">
+                <LinkScroll
+                    to={name}
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    onSetActive={() => {
+                        setActive(null);
+                    }}
+                >
+                </LinkScroll>
+            </li>
         </>
     )
 }
