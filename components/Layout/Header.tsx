@@ -7,6 +7,7 @@ import { useEffect, useState } from "react"
 import { MenuDropdown } from "../misc/MenuDropdown";
 import { ModalCalendly } from "../modals/ModalCalendly";
 import { InformationCircleIcon, SwatchIcon, UserGroupIcon, CurrencyDollarIcon, BookmarkIcon } from "@heroicons/react/20/solid";
+import { ScrollToLink } from './../scrollers/ScrollToLink'
 
 export const Header = () => {
 
@@ -34,113 +35,23 @@ export const Header = () => {
                         />
                     </div>
                     <ul className="hidden lg:flex col-start-4 col-end-8 text-nutricare-200  items-center">
-                        <LinkScroll
-                            activeClass="active"
-                            to="about"
-                            spy={true}
-                            smooth={true}
-                            duration={500}
-                            onSetActive={() => {
-                                setActiveLink("about");
-                            }}
-                            className={
-                                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
-                                (activeLink === "about"
-                                    ? " text-nutricare-100 animation-active "
-                                    : " text-nutricare-200 hover:text-nutricare-100 a")
-                            }
-                        >
+                        <ScrollToLink name='about' setActive={setActiveLink} active={activeLink}>
                             Acerca de
-                        </LinkScroll>
-                        <LinkScroll
-                            activeClass="active"
-                            to="feature"
-                            spy={true}
-                            smooth={true}
-                            duration={500}
-                            onSetActive={() => {
-                                setActiveLink("feature");
-                            }}
-                            className={
-                                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
-                                (activeLink === "feature"
-                                    ? " text-nutricare-100 animation-active "
-                                    : " text-nutricare-200 hover:text-nutricare-100 ")
-                            }
-                        >
+                        </ScrollToLink>
+                        <ScrollToLink name='feature' setActive={setActiveLink} active={activeLink}>
                             Servicios
-                        </LinkScroll>
-                        <LinkScroll
-                            activeClass="active"
-                            to="testimonial"
-                            spy={true}
-                            smooth={true}
-                            duration={500}
-                            onSetActive={() => {
-                                setActiveLink("testimonial");
-                            }}
-                            className={
-                                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
-                                (activeLink === "testimonial"
-                                    ? " text-nutricare-100 animation-active "
-                                    : " text-nutricare-200 hover:text-nutricare-100 ")
-                            }
-                        >
+                        </ScrollToLink>
+                        <ScrollToLink name='testimonial' setActive={setActiveLink} active={activeLink}>
                             Testimonios
-                        </LinkScroll>
-                        <LinkScroll
-                            activeClass="active"
-                            to="pricing"
-                            spy={true}
-                            smooth={true}
-                            duration={500}
-                            onSetActive={() => {
-                                setActiveLink("pricing");
-                            }}
-                            className={
-                                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
-                                (activeLink === "pricing"
-                                    ? " text-nutricare-100 animation-active "
-                                    : " text-nutricare-200 hover:text-nutricare-100 ")
-                            }
-                        >
+                        </ScrollToLink>
+                        <ScrollToLink name='pricing' setActive={setActiveLink} active={activeLink}>
                             Precios
-                        </LinkScroll>
-                        <LinkScroll
-                            activeClass="active"
-                            to="book"
-                            spy={true}
-                            smooth={true}
-                            duration={500}
-                            onSetActive={() => {
-                                setActiveLink("book");
-                            }}
-                            className={
-                                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
-                                (activeLink === "book"
-                                    ? " text-nutricare-100 animation-active "
-                                    : " text-nutricare-200 hover:text-nutricare-100 ")
-                            }
-                        >
+                        </ScrollToLink>
+                        <ScrollToLink name='book' setActive={setActiveLink} active={activeLink}>
                             Agendar
-                        </LinkScroll>
-                        <LinkScroll
-                            activeClass="active"
-                            to="footer"
-                            spy={true}
-                            smooth={true}
-                            duration={500}
-                            onSetActive={() => {
-                                setActiveLink(null);
-                            }}
-                        >
-                        </LinkScroll>
+                        </ScrollToLink>
                     </ul>
                     <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
-                        {/*<Link href="/">
-                            Sign In<ButtonOutline addClass="flex justify-center items-center rounded-2xl ml-2">Apps</ButtonOutline>
-                        </Link>*/}
-
                         <MenuDropdown></MenuDropdown>
                         <ModalCalendly addClass="w-12 h-10 flex justify-center items-center rounded-l-full rounded-r-full ml-2">Agendar</ModalCalendly>
 
