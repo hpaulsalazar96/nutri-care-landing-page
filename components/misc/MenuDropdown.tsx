@@ -3,11 +3,14 @@
 import { Menu, Transition } from '@headlessui/react'
 import { Fragment, useEffect, useRef, useState } from 'react'
 import { ChevronDownIcon, ChevronUpIcon, DevicePhoneMobileIcon, UserGroupIcon } from '@heroicons/react/20/solid'
+import { appsLinks } from './../utils/appsLinks'
 import Link from 'next/link'
 
 export const MenuDropdown = () => {
 
     const [onActive, setOnActive] = useState(false)
+
+    const { patientsUrl, doctorsUrl } = appsLinks
 
     const onDropdown = ({ target }: any) => {
         setOnActive(!onActive)
@@ -46,30 +49,34 @@ export const MenuDropdown = () => {
                         <div className="px-1 py-1 ">
                             <Menu.Item>
                                 {({ active }) => (
-                                    <button
-                                        className={`${active ? 'border border-nutricare-200 text-white' : 'border border-gray-500 text-nutricare-200'
-                                            } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
-                                    >
-                                        <DevicePhoneMobileIcon
-                                            className="h-5 w-5 mr-2 text-nutricare-200 hover:text-nutricare-100"
-                                            aria-hidden="true"
-                                        />
-                                        <Link href="https://play.google.com/store/apps/details?id=com.ionic.nutricare" target='_blank'>Pacientes NC</Link>
-                                    </button>
+                                    <Link href={patientsUrl} target='_blank'>
+                                        <button
+                                            className={`${active ? 'border border-nutricare-200 text-white' : 'border border-gray-500 text-nutricare-200'
+                                                } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                                        >
+                                            <DevicePhoneMobileIcon
+                                                className="h-5 w-5 mr-2 text-nutricare-200 hover:text-nutricare-100"
+                                                aria-hidden="true"
+                                            />
+                                            Pacientes NC
+                                        </button>
+                                    </Link>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <button
-                                        className={`${active ? 'border border-nutricare-200 text-white' : 'border border-gray-500 text-nutricare-200'
-                                            } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
-                                    >
-                                        <UserGroupIcon
-                                            className="h-5 w-5 mr-2 text-nutricare-200 hover:text-nutricare-100"
-                                            aria-hidden="true"
-                                        />
-                                        <Link href="https://nutri-care-d2d78.web.app/" target='_blank'>Doctores NC</Link>
-                                    </button>
+                                    <Link href={doctorsUrl} target='_blank'>
+                                        <button
+                                            className={`${active ? 'border border-nutricare-200 text-white' : 'border border-gray-500 text-nutricare-200'
+                                                } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                                        >
+                                            <UserGroupIcon
+                                                className="h-5 w-5 mr-2 text-nutricare-200 hover:text-nutricare-100"
+                                                aria-hidden="true"
+                                            />
+                                            Doctores NC
+                                        </button>
+                                    </Link>
                                 )}
                             </Menu.Item>
                         </div>
