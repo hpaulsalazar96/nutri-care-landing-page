@@ -15,7 +15,7 @@ export const Footer = () => {
 
     const [screenSize, setscreenSize] = useState('');
     const [smallScreen, setSmallScreen] = useState(false);
-    const { instagramLink, facebookLink, whatsappLink } = socialLinks()
+    const { instagramLink, facebookLink, whatsappLink } = socialLinks
 
     useEffect(() => {
         const updateScreenSize = () => {
