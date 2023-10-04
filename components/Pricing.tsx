@@ -46,9 +46,10 @@ export const Pricing = ({ }) => {
                                     <div className="p-1 lg:p-0 mt-2 lg:mt-4">
                                         <Image
                                             src="/assets/firstcheck.png"
-                                            width={145}
-                                            height={165}
+                                            width={350}
+                                            height={350}
                                             alt="firstcheck"
+                                            className="rounded-lg"
                                         />
                                     </div>
                                     <p className="text-lg text-nutricare-200 font-medium capitalize sm:my-4">
@@ -78,9 +79,10 @@ export const Pricing = ({ }) => {
                                     <div className="p-1 lg:p-0 mt-2 lg:mt-4">
                                         <Image
                                             src="/assets/diagnostic.png"
-                                            width={145}
-                                            height={165}
+                                            width={350}
+                                            height={350}
                                             alt="diagnostic"
+                                            className="rounded-lg"
                                         />
                                     </div>
                                     <p className="text-lg text-nutricare-200 font-medium capitalize sm:my-4">
@@ -110,9 +112,10 @@ export const Pricing = ({ }) => {
                                     <div className="p-1 lg:p-0 mt-2 lg:mt-4">
                                         <Image
                                             src="/assets/support.png"
-                                            width={145}
-                                            height={165}
+                                            width={350}
+                                            height={350}
                                             alt="support"
+                                            className="rounded-lg"
                                         />
                                     </div>
                                     <p className="text-lg text-nutricare-200 font-medium capitalize sm:my-4">
