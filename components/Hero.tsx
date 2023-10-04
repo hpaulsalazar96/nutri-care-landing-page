@@ -68,6 +68,7 @@ export const Hero = ({ }) => {
                                         width={612}
                                         height={383}
                                         className="rounded-lg"
+                                        layout="responsive"
                                         priority={true}
                                     />)
                                     :
@@ -78,6 +79,7 @@ export const Hero = ({ }) => {
                                         width={612}
                                         height={383}
                                         className="rounded-lg"
+                                        layout="responsive"
                                         priority={true}
                                     />)
                             }
