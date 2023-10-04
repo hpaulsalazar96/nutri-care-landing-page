@@ -6,7 +6,7 @@ import { ButtonPrimary } from './../buttons/ButtonPrimary'
 
 type Props = {
     children:React.ReactNode,
-    addClass:string
+    addClass?:string
 }
 
 export const ModalCalendly: React.FC<Props> = ({children, addClass}) => {
@@ -23,7 +23,7 @@ export const ModalCalendly: React.FC<Props> = ({children, addClass}) => {
   return (
     <>
       <div className="flex items-center justify-center">
-        <ButtonPrimary addClass={"w-10 h-10 flex justify-center items-center rounded-l-full rounded-r-full ml-2"+addClass} onClick={openModal}>{children}</ButtonPrimary>
+        <ButtonPrimary addClass={addClass} onClick={openModal}>{children}</ButtonPrimary>
       </div>
 
       <Transition appear show={isOpen} as={Fragment}>

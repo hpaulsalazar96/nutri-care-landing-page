@@ -1,8 +1,8 @@
 import { motion } from "framer-motion"
 import { ScrollAnimationWrapper } from "./misc/ScrollAnimationWrapper"
-import { ButtonPrimary } from "./buttons/ButtonPrimary"
 import { getScrollAnimation } from "./utils/getScrollAnimation";
 import { useMemo } from "react";
+import { ModalCalendly } from "./modals/ModalCalendly";
 
 export const ModalButton = () => {
     const scrollAnimation = useMemo(() => getScrollAnimation(), []);
@@ -18,7 +18,7 @@ export const ModalButton = () => {
                                 </h5>
                                 <p className="nutricare-200">Para evaluar tus necesidades nutricionales específicas.</p>
                             </div>
-                            <ButtonPrimary addClass="mb-4 lg:mb-0 xl:mb-0 md:mb-0">Agendar Ahora</ButtonPrimary>
+                            <ModalCalendly addClass="">Agendar Ahora</ModalCalendly>
                         </div>
                         <div
                             className="absolute bg-nutricare-200 opacity-5 w-11/12 roudned-lg h-60 sm:h-56 top-0 mt-8 mx-auto left-0 right-0 "

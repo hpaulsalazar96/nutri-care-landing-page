@@ -8,6 +8,7 @@ import { getScrollAnimation } from "./utils/getScrollAnimation";
 import { ScrollAnimationWrapper } from "./misc/ScrollAnimationWrapper";
 import { UserGroupIcon, VideoCameraIcon, GlobeAmericasIcon, LanguageIcon, ClockIcon, DevicePhoneMobileIcon } from "@heroicons/react/20/solid";
 import { DetailIcon } from "./misc/DetailIcon";
+import { ModalCalendly } from "./modals/ModalCalendly";
 
 export const Hero = ({ }) => {
     const scrollAnimation = useMemo(() => getScrollAnimation(), []);
@@ -54,7 +55,7 @@ export const Hero = ({ }) => {
                         <p className="text-nutricare-200 mt-4 mb-6">
                             Accede a una primera cita para evaluar de tus necesidades nutricionales.
                         </p>
-                        <ButtonPrimary>Agendar Ahora</ButtonPrimary>
+                        <ModalCalendly addClass="">Agendar Ahora</ModalCalendly>
                     </div>
                     <div className="flex w-full">
                         <motion.div className="w-full" variants={scrollAnimation}>

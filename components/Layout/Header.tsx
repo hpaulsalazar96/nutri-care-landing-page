@@ -1,6 +1,5 @@
 'use client'
 
-import { Link as LinkScroll } from 'react-scroll'
 import Image from 'next/image';
 import logoNC from '@/public/assets/Logo.svg'
 import { useEffect, useState } from "react"
@@ -54,7 +53,7 @@ export const Header = () => {
                     </ul>
                     <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
                         <MenuDropdown></MenuDropdown>
-                        <ModalCalendly addClass="w-12 h-10 flex justify-center items-center rounded-l-full rounded-r-full ml-2">Agendar</ModalCalendly>
+                        <ModalCalendly addClass="w-10 h-10 flex justify-center items-center rounded-l-full rounded-r-full ml-2">Agendar</ModalCalendly>
                     </div>
                 </nav>
             </header>
