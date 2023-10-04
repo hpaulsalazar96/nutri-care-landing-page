@@ -6,7 +6,7 @@ import { ButtonPrimary } from "./misc/ButtonPrimary";
 import { motion } from "framer-motion";
 import { getScrollAnimation } from "./utils/getScrollAnimation";
 import { ScrollAnimationWrapper } from "./misc/ScrollAnimationWrapper";
-import { UserGroupIcon, VideoCameraIcon, GlobeAmericasIcon, LanguageIcon, UsersIcon, DevicePhoneMobileIcon } from "@heroicons/react/20/solid";
+import { UserGroupIcon, VideoCameraIcon, GlobeAmericasIcon, LanguageIcon, ClockIcon, DevicePhoneMobileIcon } from "@heroicons/react/20/solid";
 import { DetailIcon } from "./misc/DetailIcon";
 
 export const Hero = ({ }) => {
@@ -93,7 +93,7 @@ export const Hero = ({ }) => {
                     <DetailIcon index={2} name="Online" description="Citas" Icon={VideoCameraIcon} />
                     <DetailIcon index={4} name="Español" description="100%" Icon={LanguageIcon} />
                     <DetailIcon index={3} name="Paises" description="10+" Icon={GlobeAmericasIcon} />
-                    <DetailIcon index={5} name="Contigo" description="24/7" Icon={UsersIcon} />
+                    <DetailIcon index={5} name="Contigo" description="24/7" Icon={ClockIcon} />
                     <DetailIcon index={6} name="NutriCare" description="App" Icon={DevicePhoneMobileIcon} />
                 </ScrollAnimationWrapper>
                 <div
