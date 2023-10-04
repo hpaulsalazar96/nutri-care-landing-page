@@ -72,10 +72,10 @@ export const Header = () => {
                         <ScrollToLinkMobile name='testimonial' setActive={setActiveLink} active={activeLink} Icon={UserGroupIcon}>
                         Testimonios
                         </ScrollToLinkMobile>
-                        <ScrollToLinkMobile name='pricing' setActive={setActiveLink} active={activeLink} Icon={UserGroupIcon}>
+                        <ScrollToLinkMobile name='pricing' setActive={setActiveLink} active={activeLink} Icon={CurrencyDollarIcon}>
                         Precios
                         </ScrollToLinkMobile>
-                        <ScrollToLinkMobile name='book' setActive={setActiveLink} active={activeLink} Icon={UserGroupIcon}>
+                        <ScrollToLinkMobile name='book' setActive={setActiveLink} active={activeLink} Icon={BookmarkIcon}>
                         Cita
                         </ScrollToLinkMobile>
                         <ScrollToUnselect name='footer' setActive={setActiveLink}/>
