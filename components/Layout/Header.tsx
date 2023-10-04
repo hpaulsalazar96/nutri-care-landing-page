@@ -50,7 +50,7 @@ export const Header = () => {
                         <ScrollToLink name='book' setActive={setActiveLink} active={activeLink}>
                             Agendar
                         </ScrollToLink>
-                        <ScrollToUnselect name='footer' setActive={setActiveLink}/>
+                        <ScrollToUnselect name='footer' setActive={setActiveLink} />
                     </ul>
                     <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
                         <MenuDropdown></MenuDropdown>
@@ -64,21 +64,21 @@ export const Header = () => {
                 <div className="bg-white-500 sm:px-3">
                     <ul className="flex w-full justify-between items-center text-nutricare-200">
                         <ScrollToLinkMobile name='about' setActive={setActiveLink} active={activeLink} Icon={InformationCircleIcon}>
-                        Acerca
+                            Acerca
                         </ScrollToLinkMobile>
                         <ScrollToLinkMobile name='feature' setActive={setActiveLink} active={activeLink} Icon={SwatchIcon}>
-                        Servicios
+                            Servicios
                         </ScrollToLinkMobile>
                         <ScrollToLinkMobile name='testimonial' setActive={setActiveLink} active={activeLink} Icon={UserGroupIcon}>
-                        Testimonios
+                            Testimonios
                         </ScrollToLinkMobile>
                         <ScrollToLinkMobile name='pricing' setActive={setActiveLink} active={activeLink} Icon={CurrencyDollarIcon}>
-                        Precios
+                            Precios
                         </ScrollToLinkMobile>
                         <ScrollToLinkMobile name='book' setActive={setActiveLink} active={activeLink} Icon={BookmarkIcon}>
-                        Cita
+                            Cita
                         </ScrollToLinkMobile>
-                        <ScrollToUnselect name='footer' setActive={setActiveLink}/>
+                        <ScrollToUnselect name='footer' setActive={setActiveLink} />
                     </ul>
                 </div>
             </nav>

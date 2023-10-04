@@ -34,7 +34,7 @@ export const Hero = ({ }) => {
             className="max-w-screen-xl mt-24 px-8 xl:px-16 mx-auto mb-10"
             id="about"
         >
-            {!smallScreen ? <div className="pt-16"/> :<div className="pt-10"/>}
+            {!smallScreen ? <div className="pt-24"/> :<div className="pt-10"/>}
             <ScrollAnimationWrapper>
                 <motion.div
                     className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 "
@@ -67,8 +67,8 @@ export const Hero = ({ }) => {
                                         quality={100}
                                         width={612}
                                         height={383}
-                                        layout="responsive"
                                         className="rounded-lg"
+                                        priority={true}
                                     />)
                                     :
                                     (<Image
@@ -77,8 +77,8 @@ export const Hero = ({ }) => {
                                         quality={100}
                                         width={612}
                                         height={383}
-                                        layout="responsive"
                                         className="rounded-lg"
+                                        priority={true}
                                     />)
                             }
 

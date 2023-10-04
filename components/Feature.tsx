@@ -49,7 +49,6 @@ export const Feature = () => {
                         <Image
                             src="/assets/portrait.png"
                             alt="portrait"
-                            layout="responsive"
                             quality={100}
                             width={612}
                             height={383}
