@@ -10,6 +10,7 @@ import Link from "next/link";
 import { socialLinks } from '../utils/socialLinks'
 import { useEffect, useState } from "react";
 import { SocialLink } from "../misc/SocialLink";
+import { Link as LinkScroll } from 'react-scroll'
 
 export const Footer = () => {
 
@@ -120,19 +121,54 @@ export const Footer = () => {
                         </p>
                         <ul className="text-nutricare-200 ">
                             <li className="my-2 hover:text-nutricare-100 cursor-pointer transition-all">
-                                <Link href="#about" scroll={true}>Acerca de{" "}</Link>
+                                <LinkScroll
+                                    to="about"
+                                    spy={true}
+                                    smooth={true}
+                                    duration={500}
+                                >
+                                    Acerca de
+                                </LinkScroll>
                             </li>
                             <li className="my-2 hover:text-nutricare-100 cursor-pointer transition-all">
-                                <Link href="#feature" scroll={true}>Servicios{" "}</Link>
+                                <LinkScroll
+                                    to="feature"
+                                    spy={true}
+                                    smooth={true}
+                                    duration={500}
+                                >
+                                    Servicios
+                                </LinkScroll>
                             </li>
                             <li className="my-2 hover:text-nutricare-100 cursor-pointer transition-all">
-                                <Link href="#testimonial" scroll={true}>Testimonios{" "}</Link>
+                                <LinkScroll
+                                    to="testimonial"
+                                    spy={true}
+                                    smooth={true}
+                                    duration={500}
+                                >
+                                    Testimonios
+                                </LinkScroll>
                             </li>
                             <li className="my-2 hover:text-nutricare-100 cursor-pointer transition-all">
-                                <Link href="#pricing" scroll={true}>Precios{" "}</Link>
+                                <LinkScroll
+                                    to="pricing"
+                                    spy={true}
+                                    smooth={true}
+                                    duration={500}
+                                >
+                                    Precios
+                                </LinkScroll>
                             </li>
                             <li className="my-2 hover:text-nutricare-100 cursor-pointer transition-all">
-                                <Link href="#book" scroll={true}>Agendar{" "}</Link>
+                                <LinkScroll
+                                    to="book"
+                                    spy={true}
+                                    smooth={true}
+                                    duration={500}
+                                >
+                                    Agendar
+                                </LinkScroll>
                             </li>
                         </ul>
                     </div>
