@@ -11,6 +11,7 @@ import { socialLinks } from '../utils/socialLinks'
 import { useEffect, useState } from "react";
 import { SocialLink } from "../misc/SocialLink";
 import { Link as LinkScroll } from 'react-scroll'
+import { ScrollToLinkSimple } from './../scrollers/ScrollToLink'
 
 export const Footer = () => {
 
@@ -120,56 +121,21 @@ export const Footer = () => {
                             </strong>
                         </p>
                         <ul className="text-nutricare-200 ">
-                            <li className="my-2 hover:text-nutricare-100 cursor-pointer transition-all">
-                                <LinkScroll
-                                    to="about"
-                                    spy={true}
-                                    smooth={true}
-                                    duration={500}
-                                >
-                                    Acerca de
-                                </LinkScroll>
-                            </li>
-                            <li className="my-2 hover:text-nutricare-100 cursor-pointer transition-all">
-                                <LinkScroll
-                                    to="feature"
-                                    spy={true}
-                                    smooth={true}
-                                    duration={500}
-                                >
-                                    Servicios
-                                </LinkScroll>
-                            </li>
-                            <li className="my-2 hover:text-nutricare-100 cursor-pointer transition-all">
-                                <LinkScroll
-                                    to="testimonial"
-                                    spy={true}
-                                    smooth={true}
-                                    duration={500}
-                                >
-                                    Testimonios
-                                </LinkScroll>
-                            </li>
-                            <li className="my-2 hover:text-nutricare-100 cursor-pointer transition-all">
-                                <LinkScroll
-                                    to="pricing"
-                                    spy={true}
-                                    smooth={true}
-                                    duration={500}
-                                >
-                                    Precios
-                                </LinkScroll>
-                            </li>
-                            <li className="my-2 hover:text-nutricare-100 cursor-pointer transition-all">
-                                <LinkScroll
-                                    to="book"
-                                    spy={true}
-                                    smooth={true}
-                                    duration={500}
-                                >
-                                    Agendar
-                                </LinkScroll>
-                            </li>
+                            <ScrollToLinkSimple name="about">
+                                Acerca de
+                            </ScrollToLinkSimple>
+                            <ScrollToLinkSimple name="feature">
+                                Servicios
+                            </ScrollToLinkSimple>
+                            <ScrollToLinkSimple name="testimonial">
+                                Testimonios
+                            </ScrollToLinkSimple>
+                            <ScrollToLinkSimple name="pricing">
+                                Precios
+                            </ScrollToLinkSimple>
+                            <ScrollToLinkSimple name="book">
+                                Agendar
+                            </ScrollToLinkSimple>
                         </ul>
                     </div>
                 </div>
