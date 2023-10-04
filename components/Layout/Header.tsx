@@ -8,6 +8,7 @@ import { ButtonPrimary } from "../misc/ButtonPrimary"
 import logoNC from '@/public/assets/Logo.svg'
 import { useEffect, useState } from "react"
 import { MenuDropdown } from "../misc/MenuDropdown";
+import { ModalCalendly } from "../misc/ModalCalendly";
 
 export const Header = () => {
 
@@ -143,7 +144,9 @@ export const Header = () => {
                         </Link>*/}
 
                         <MenuDropdown></MenuDropdown>
-                        <ButtonPrimary addClass="w-10 h-10 flex justify-center items-center rounded-l-full rounded-r-full ml-2">Agendar</ButtonPrimary>
+                        <ModalCalendly addClass="w-12 h-10 flex justify-center items-center rounded-l-full rounded-r-full ml-2">Agendar</ModalCalendly>
+                        
+                        
                     </div>
                 </nav>
             </header>
