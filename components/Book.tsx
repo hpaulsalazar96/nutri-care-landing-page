@@ -42,7 +42,7 @@ export const Booking = () => {
             </div>
             {
                 active && (
-                    <div className="bg-gradient-to-b from-white-300 to-white-500 w-full mb-12" id="book">
+                    <div className="bg-gradient-to-b from-white-300 to-white-500 w-full mb-12 justify-items-center grid justify-items-center" id="book">
                         <div className="max-w-screen-xl  sm:px-8 lg:px-16 w-full text-center justify-center">
                             <div className="mb-12">
                                 <ScrollAnimationWrapper className="relative w-full mt-2 mb-8">
