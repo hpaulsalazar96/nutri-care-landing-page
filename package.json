@@ -21,14 +21,15 @@
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.2.17",
     "@types/node": "latest",
     "@types/react": "^18.2.23",
     "@types/react-dom": "^18.2.8",
     "@types/react-scroll": "^1.8.8",
     "@types/react-slick": "^0.23.10",
-    "autoprefixer": "latest",
-    "postcss": "latest",
-    "tailwindcss": "latest",
+    "autoprefixer": "^9.8.8",
+    "postcss": "^7.0.39",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
     "typescript": "latest"
   }
 }
