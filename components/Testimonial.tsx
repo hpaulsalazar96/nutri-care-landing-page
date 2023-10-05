@@ -113,13 +113,14 @@ export const Testimonial = ({ }) => {
                                                                                 height={50}
                                                                                 width={50}
                                                                                 alt="Icon People"
+                                                                                className="w-12 h-12 rounded-full"
                                                                             />
                                                                             :
                                                                             <UserCircleIcon className="h-12 w-12 text-nutricare-100" />
                                                                     }
 
                                                                     <div className="flex flex-col ml-5 text-left">
-                                                                        <p className="text-lg text-nutricare-200 capitalize">
+                                                                        <p className="text-md text-nutricare-200 capitalize font-semibold sm:font-bold">
                                                                             {listTestimonis.name}
                                                                         </p>
                                                                         <p className="text-sm text-nutricare-300 capitalize">

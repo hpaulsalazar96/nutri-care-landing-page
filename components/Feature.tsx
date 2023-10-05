@@ -1,6 +1,6 @@
 'use client'
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { getScrollAnimation } from "./utils/getScrollAnimation";
@@ -54,7 +54,7 @@ export const Feature = () => {
                             width={612}
                             height={383}
                             className="rounded-lg"
-                            priority={true}
+                            blurDataURL={'/Logo.svg'}    
                         />
                     </motion.div>
                 </ScrollAnimationWrapper>

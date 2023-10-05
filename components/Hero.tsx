@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useMemo, useState } from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { motion } from "framer-motion";
 import { getScrollAnimation } from "./utils/getScrollAnimation";
 import { ScrollAnimationWrapper } from "./misc/ScrollAnimationWrapper";
@@ -63,23 +63,25 @@ export const Hero = ({ }) => {
                                     ?
                                     (<Image
                                         src="/assets/hero.png"
-                                        alt="Nutri Care Hero"
+                                        alt="NCH"
                                         quality={100}
                                         width={612}
                                         height={383}
                                         className="rounded-lg"
                                         layout="responsive"
+                                        blurDataURL={'/Logo.svg'}
                                         priority={true}
                                     />)
                                     :
                                     (<Image
                                         src="/assets/heromin.png"
-                                        alt="Nutri Care Hero"
+                                        alt="NCHmin"
                                         quality={100}
                                         width={612}
-                                        height={383}
+                                        height={612}
                                         className="rounded-lg"
                                         layout="responsive"
+                                        blurDataURL={'/Logo.svg'}
                                         priority={true}
                                     />)
                             }

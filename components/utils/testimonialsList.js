@@ -2,7 +2,7 @@ export const testimonialsList = [
     {
         name: "Alison Goyes",
         image: "/testimonials/ag.jpg",
-        career: "Diseñadora Gráfica",
+        career: "Diseñadora",
         rating: "5.0",
         testimoni:
             "Quería subir de peso, pero debido a mi demandante ritmo de vida no lo conseguía. Con el acompañamiento de Nutri Care finalmente logré llegar a mi peso ideal.",
@@ -10,7 +10,7 @@ export const testimonialsList = [
     {
         name: "Marcela Vega",
         image: "/testimonials/mv.jpg",
-        career: "Psicóloga Educativa",
+        career: "Psicóloga",
         rating: "5.0",
         testimoni:
             "Tenía sobrepeso, intenté bajar de peso y solo seguia subiendo. En Nutri Care me explicaron los motivos de esto. Inicie un plan de alimentación que me permitió mejorar mi estilo de vida.",
@@ -26,7 +26,7 @@ export const testimonialsList = [
     {
         name: "Rommy Vera",
         image: "/testimonials/rv.jpg",
-        career: "Estudiante Universitaria",
+        career: "Estudiante",
         rating: "5.0",
         testimoni:
             "Debido a mi bajo peso acudí a Nutri Care. Elaboraron un diario de alimentación especifico para mi. En el transcurso aprendí lo que mi cuerpo necesitaba.",
@@ -40,17 +40,17 @@ export const testimonialsList = [
             "Mi nutricionista en línea me ayudó a planificar comidas saludables que se ajustan a mi ajetreada rutina. Perdí peso y ahora tengo más energía para mis alumnos.",
     },
     {
-        name: "Carlos Rodríguez",
+        name: "Carlos Gomez",
         image: "/testimonials/jp.jpg",
-        career: "Ingeniero Civil",
+        career: "Ingeniero",
         rating: "5.0",
         testimoni:
             "NutriCare me enseñó a equilibrar mi dieta mientras trabajaba largas horas. Mi nutricionista en línea diseñó un plan que me ayudó a perder peso y mejorar mi salud en general.",
     },
     {
-        name: "Laura Martínez",
+        name: "Ximena Aldaz",
         image: "/testimonials/lm.jpg",
-        career: "Estudiante universitaria",
+        career: "Estudiante",
         rating: "5.0",
         testimoni:
             "El estres de la universidad afectó  a mi dieta, NutriCare me dio un enfoque realista y asequible para la nutrición. Perdí peso, me siento más concentrada y confiada.",
