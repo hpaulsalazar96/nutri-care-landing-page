@@ -1,7 +1,7 @@
 'use client'
 
 import Script from 'next/script'
-import { ScrollAnimationWrapper } from './ScrollAnimationWrapper';
+import { ScrollAnimationWrapper } from '../misc/ScrollAnimationWrapper';
 import { motion } from 'framer-motion';
 import { useMemo } from 'react';
 import { getScrollAnimation } from '../utils/getScrollAnimation';

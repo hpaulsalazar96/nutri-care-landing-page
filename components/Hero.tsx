@@ -8,7 +8,6 @@ import { getScrollAnimation } from "./utils/getScrollAnimation";
 import { ScrollAnimationWrapper } from "./misc/ScrollAnimationWrapper";
 import { UserGroupIcon, VideoCameraIcon, GlobeAmericasIcon, LanguageIcon, ClockIcon, DevicePhoneMobileIcon } from "@heroicons/react/20/solid";
 import { DetailIcon } from "./misc/DetailIcon";
-import { ModalCalendly } from "./modals/ModalCalendly";
 import { ButtonScroll } from "./buttons/ButtonScroll";
 
 export const Hero = ({ }) => {
