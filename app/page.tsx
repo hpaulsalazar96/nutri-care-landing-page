@@ -1,3 +1,4 @@
+import { Booking } from "@/components/Book"
 import { Feature } from "@/components/Feature"
 import { Hero } from "@/components/Hero"
 import { Layout } from "@/components/layout/Layout"
@@ -14,6 +15,7 @@ const Home = () => {
                 <Feature />
                 <Testimonial />
                 <Pricing />
+                <Booking/>
             </Layout>
         </>
     )

@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { getScrollAnimation } from "./utils/getScrollAnimation";
 import { ScrollAnimationWrapper } from "./misc/ScrollAnimationWrapper";
 import { useMemo } from "react";
-import { ModalButton } from "./Book";
 
 export const Pricing = ({ }) => {
     const scrollAnimation = useMemo(() => getScrollAnimation(), []);
@@ -133,7 +132,6 @@ export const Pricing = ({ }) => {
                             </ScrollAnimationWrapper>
                         </div>
                     </div>
-                    <ModalButton />
                 </div>
 
             </div>
