@@ -9,6 +9,7 @@ import { ScrollAnimationWrapper } from "./misc/ScrollAnimationWrapper";
 import { UserGroupIcon, VideoCameraIcon, GlobeAmericasIcon, LanguageIcon, ClockIcon, DevicePhoneMobileIcon } from "@heroicons/react/20/solid";
 import { DetailIcon } from "./misc/DetailIcon";
 import { ModalCalendly } from "./modals/ModalCalendly";
+import { ButtonScroll } from "./buttons/ButtonScroll";
 
 export const Hero = ({ }) => {
     const scrollAnimation = useMemo(() => getScrollAnimation(), []);
@@ -35,27 +36,27 @@ export const Hero = ({ }) => {
             className="max-w-screen-xl mt-24 px-8 xl:px-16 mx-auto mb-10"
             id="about"
         >
-            {!smallScreen ? <div className="pt-24"/> :<div className="pt-10"/>}
+            {!smallScreen ? <div className="pt-24" /> : <div className="pt-10" />}
             <ScrollAnimationWrapper>
                 <motion.div
                     className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 "
                     variants={scrollAnimation}>
                     <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
-                            {
-                                !smallScreen
-                                    ?
-                                    (<h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-nutricare-200 leading-normal">
-                                        Tu camino hacia una vida más saludable comienza con <strong>Nutri Care</strong>.
-                                    </h1>)
-                                    :
-                                    (<h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-nutricare-200 leading-normal">
-                                        Tu camino hacia una vida más saludable comienza con <br /><strong>Nutri Care</strong>.
-                                    </h1>)
-                            }
+                        {
+                            !smallScreen
+                                ?
+                                (<h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-nutricare-200 leading-normal">
+                                    Tu camino hacia una vida más saludable comienza con <strong>Nutri Care</strong>.
+                                </h1>)
+                                :
+                                (<h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-nutricare-200 leading-normal">
+                                    Tu camino hacia una vida más saludable comienza con <br /><strong>Nutri Care</strong>.
+                                </h1>)
+                        }
                         <p className="text-nutricare-200 mt-4 mb-6">
                             Accede a una primera cita para evaluar de tus necesidades nutricionales.
                         </p>
-                        <ModalCalendly addClass="">Agendar Ahora</ModalCalendly>
+                        <ButtonScroll>Agendar Ahora</ButtonScroll>
                     </div>
                     <div className="flex w-full">
                         <motion.div className="w-full" variants={scrollAnimation}>

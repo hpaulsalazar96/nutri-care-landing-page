@@ -4,9 +4,9 @@ import Image from 'next/image';
 import logoNC from '@/public/assets/Logo.svg'
 import { useEffect, useState } from "react"
 import { MenuDropdown } from "../misc/MenuDropdown";
-import { ModalCalendly } from "../modals/ModalCalendly";
 import { InformationCircleIcon, SwatchIcon, UserGroupIcon, CurrencyDollarIcon, BookmarkIcon } from "@heroicons/react/20/solid";
 import { ScrollToLink, ScrollToLinkMobile, ScrollToUnselect } from './../scrollers/ScrollToLink'
+import { ButtonScroll } from '../buttons/ButtonScroll';
 
 export const Header = () => {
 
@@ -53,7 +53,7 @@ export const Header = () => {
                     </ul>
                     <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
                         <MenuDropdown></MenuDropdown>
-                        <ModalCalendly addClass="w-10 h-10 flex justify-center items-center rounded-l-full rounded-r-full ml-2">Agendar</ModalCalendly>
+                        <ButtonScroll addClass="w-10 h-10 flex justify-center items-center rounded-l-full rounded-r-full ml-2">Agendar</ButtonScroll>
                     </div>
                 </nav>
             </header>
