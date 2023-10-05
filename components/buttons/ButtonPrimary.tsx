@@ -1,7 +1,7 @@
 type Props = {
   addClass?: string,
   children?: React.ReactNode,
-  onClick?:any
+  onClick?: any
 }
 
 export const ButtonPrimary: React.FC<Props> = ({ children, addClass, onClick }) => {

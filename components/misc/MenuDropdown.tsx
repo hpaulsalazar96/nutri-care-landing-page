@@ -1,7 +1,7 @@
 'use client'
 
 import { Menu, Transition } from '@headlessui/react'
-import { Fragment, useEffect, useRef, useState } from 'react'
+import { Fragment, useState } from 'react'
 import { ChevronDownIcon, ChevronUpIcon, DevicePhoneMobileIcon, UserGroupIcon } from '@heroicons/react/20/solid'
 import { appsLinks } from './../utils/appsLinks'
 import Link from 'next/link'

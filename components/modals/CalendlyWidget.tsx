@@ -1,10 +1,6 @@
 'use client'
 
 import Script from 'next/script'
-import { ScrollAnimationWrapper } from '../misc/ScrollAnimationWrapper';
-import { motion } from 'framer-motion';
-import { useEffect, useMemo } from 'react';
-import { getScrollAnimation } from '../utils/getScrollAnimation';
 import Head from 'next/head';
 
 

@@ -29,7 +29,7 @@ export const Booking = () => {
                                         </h5>
                                         <p className="nutricare-200">Para evaluar tus necesidades nutricionales específicas.</p>
                                     </div>
-                                    <ButtonPrimary addClass={active?"text-white-500 bg-nutricare-200":"text-white-500 bg-nutricare-100"} onClick={onHandleClick}>Agendar Ahora</ButtonPrimary>
+                                    <ButtonPrimary addClass={active ? "text-white-500 bg-nutricare-200" : "text-white-500 bg-nutricare-100"} onClick={onHandleClick}>Agendar Ahora</ButtonPrimary>
                                 </div>
                                 <div
                                     className="absolute bg-nutricare-200 opacity-5 w-11/12 roudned-lg h-60 sm:h-56 top-0 mt-8 mx-auto left-0 right-0 "
@@ -62,7 +62,7 @@ export const Booking = () => {
                         </div>
                     </div >
                 )
-                    
+
             }
 
         </>

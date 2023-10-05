@@ -11,11 +11,11 @@ const Home = () => {
         <>
             <SeoHead title='Nutri Care Nutritional Landing Page' />
             <Layout>
-                <Hero/>
+                <Hero />
                 <Feature />
                 <Testimonial />
                 <Pricing />
-                <Booking/>
+                <Booking />
             </Layout>
         </>
     )

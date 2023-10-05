@@ -20,7 +20,7 @@ export const Testimonial = ({ }) => {
                 <a className="">
                     <span className="mx-2 rounded-l-full rounded-r-full h-4 w-4 block cursor-pointer transition-all "></span>
                 </a>
-            );
+            )
         },
         dotsClass: "slick-dots w-max absolute mt-20  ",
         infinite: true,
@@ -61,8 +61,8 @@ export const Testimonial = ({ }) => {
         window.addEventListener('resize', updateScreenSize);
         return () => {
             window.removeEventListener('resize', updateScreenSize);
-        };
-    }, []);
+        }
+    }, [])
 
     return (
         <>
@@ -84,7 +84,7 @@ export const Testimonial = ({ }) => {
                                     className="leading-normal mx-auto mb-2 mt-4 w-10/12 sm:w-7/12 lg:w-6/12"
                                 >
                                     Estos son los relatos de algunos de nuestros clientes. <br />
-                                        Describen como fue su experiencia con Nutri Care
+                                    Describen como fue su experiencia con Nutri Care
                                 </motion.p>
                             </ScrollAnimationWrapper>
                         </div>
@@ -223,7 +223,6 @@ export const Testimonial = ({ }) => {
                                         </>
                                         )
                                 }
-
                             </motion.div>
                         </ScrollAnimationWrapper>
 

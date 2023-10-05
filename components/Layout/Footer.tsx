@@ -10,7 +10,6 @@ import Link from "next/link";
 import { socialLinks } from '../utils/socialLinks'
 import { useEffect, useState } from "react";
 import { SocialLink } from "../misc/SocialLink";
-import { Link as LinkScroll } from 'react-scroll'
 import { ScrollToLinkSimple } from './../scrollers/ScrollToLink'
 
 export const Footer = () => {
@@ -57,7 +56,7 @@ export const Footer = () => {
                         <p className="mb-4 mt-4 text-nutricare-200">
                             <strong>Nutricare</strong> es una agencia de consultoría nutricional que brinda un seguimiento nutricional integral  a sus pacientes, de manera <strong>presencial</strong> y <strong>virtual</strong>.
                         </p>
-                        {smallScreen ?
+                        {smallScreen &&
                             (<div className="flex w-full mt-6 mb-8 flex items-center ml-2">
                                 <p className="text-nutricare-200 text-sm">Siguenos:</p>
                                 <div className="flex w-full">
@@ -67,8 +66,6 @@ export const Footer = () => {
                                 </div>
                             </div>
                             )
-                            :
-                            ("")
                         }
                     </div>
 
@@ -99,19 +96,17 @@ export const Footer = () => {
                             </li>
                         </ul>
                         {
-                            !smallScreen ?
-                                (
-                                    <div className="flex w-full mt-6 mb-8 flex items-center">
-                                        <p className="text-nutricare-200 text-sm">Siguenos:</p>
-                                        <div className="flex w-full">
-                                            <SocialLink url={whatsappLink} path={whatsappIcon} description="Siguenos en Whatsapp" />
-                                            <SocialLink url={instagramLink} path={instagramIcon} description="Siguenos en Instagram" />
-                                            <SocialLink url={facebookLink} path={facebookIcon} description="Siguenos en Facebook" />
-                                        </div>
+                            !smallScreen &&
+                            (
+                                <div className="flex w-full mt-6 mb-8 flex items-center">
+                                    <p className="text-nutricare-200 text-sm">Siguenos:</p>
+                                    <div className="flex w-full">
+                                        <SocialLink url={whatsappLink} path={whatsappIcon} description="Siguenos en Whatsapp" />
+                                        <SocialLink url={instagramLink} path={instagramIcon} description="Siguenos en Instagram" />
+                                        <SocialLink url={facebookLink} path={facebookIcon} description="Siguenos en Facebook" />
                                     </div>
-                                )
-                                :
-                                ('')
+                                </div>
+                            )
                         }
                     </div>
                     <div className=" row-span-3 sm:col-span-3 sm:col-start-6 sm:col-end-9 flex flex-col mx-3">
@@ -143,7 +138,13 @@ export const Footer = () => {
                 <div className="max-w-screen-xl w-full mx-auto px-6 sm:px-8 lg:px-16 grid grid-rows-12 mx-auto pt-1">
                     <div className="row-span-2 sm:col-span-4 col-start-1 col-end-4 sm:col-end-5 flex flex-col items-start ">
                         <p className="text-nutricare-300">©{new Date().getFullYear()} - Nutri.Care </p>
-                        <p className="text-nutricare-300">Desarrollado por <strong className="transition ease-in-out delay-50 hover:text-nutricare-200 "><Link href="https://github.com/hpaulsalazar96/" target="_blank">@hpaulsalazar96</Link></strong> </p>
+                        <p className="text-nutricare-300">Desarrollado por
+                            <strong className="transition ease-in-out delay-50 hover:text-nutricare-200 ">
+                                <Link href="https://github.com/hpaulsalazar96/" target="_blank">
+                                    @hpaulsalazar96
+                                </Link>
+                            </strong>
+                        </p>
                     </div>
                 </div>
             </div>
