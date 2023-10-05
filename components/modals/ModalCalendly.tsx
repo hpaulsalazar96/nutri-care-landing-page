@@ -3,6 +3,7 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
 import { ButtonPrimary } from './../buttons/ButtonPrimary'
+import { CalendlyWidget } from '../misc/CalendlyWidget'
 
 type Props = {
     children:React.ReactNode,
@@ -13,11 +14,15 @@ export const ModalCalendly: React.FC<Props> = ({children, addClass}) => {
   let [isOpen, setIsOpen] = useState(false)
 
   const closeModal = () => {
-    setIsOpen(false)
+    setIsOpen(!isOpen)
+    
+    
   }
 
   const openModal = () => {
-    setIsOpen(true)
+    setIsOpen(!isOpen)
+    
+    
   }
 
   return (
@@ -41,7 +46,7 @@ export const ModalCalendly: React.FC<Props> = ({children, addClass}) => {
           </Transition.Child>
 
           <div className="fixed inset-0 overflow-y-auto">
-            <div className="flex min-h-full items-center justify-center p-4 text-center">
+            <div className="flex items-center justify-center mt-40 text-center items-center">
               <Transition.Child
                 as={Fragment}
                 enter="ease-out duration-300"
@@ -51,18 +56,14 @@ export const ModalCalendly: React.FC<Props> = ({children, addClass}) => {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-100"
               >
-                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className=" h-auto m-auto transform overflow-hidden rounded-2xl bg-nutricare-200 text-left align-middle shadow-xl transition-all">
                   <Dialog.Title
                     as="h3"
                     className="text-lg font-medium leading-6 text-gray-900"
                   >
-                    Payment successful
                   </Dialog.Title>
                   <div className="mt-2">
-                    <p className="text-sm text-gray-500">
-                      Your payment has been successfully submitted. We’ve sent
-                      you an email with all of the details of your order.
-                    </p>
+                    <CalendlyWidget addClass='w-screen/2 h-96'/>
                   </div>
 
                   <div className="mt-4">
@@ -72,6 +73,7 @@ export const ModalCalendly: React.FC<Props> = ({children, addClass}) => {
                       onClick={closeModal}
                     >
                       Got it, thanks!
+                      
                     </button>
                   </div>
                 </Dialog.Panel>

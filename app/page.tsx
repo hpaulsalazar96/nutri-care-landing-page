@@ -4,7 +4,6 @@ import { Layout } from "@/components/layout/Layout"
 import { Pricing } from "@/components/Pricing"
 import { SeoHead } from "@/components/SeoHead"
 import { Testimonial } from "@/components/Testimonial"
-import { ModalButton } from "@/components/Book"
 
 const Home = () => {
     return (
