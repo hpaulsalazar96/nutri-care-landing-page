@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <>
             <SeoHead title='Nutri Care Nutritional Landing Page' />
-            <Layout>
+            <Layout addClass="bg-gradient-to-b from-white-300 to-white-500">
                 <Hero />
                 <Feature />
                 <Testimonial />

@@ -40,36 +40,12 @@ export const testimonialsList = [
             "Mi nutricionista en línea me ayudó a planificar comidas saludables que se ajustan a mi ajetreada rutina. Perdí peso y ahora tengo más energía para mis alumnos.",
     },
     {
-        name: "Juan Pérez",
-        image: "/testimonials/jp.jpg",
-        career: "Gerente de ventas",
-        rating: "5.0",
-        testimoni:
-            "Viajo constantemente y eso afecto a mi salud. NutriCare en línea me proporcionó un plan adaptado a mi estilo de vida, el cual me enseñó a comer de una manera saludable.",
-    },
-    {
         name: "Carlos Rodríguez",
         image: "/testimonials/jp.jpg",
         career: "Ingeniero Civil",
         rating: "5.0",
         testimoni:
             "NutriCare me enseñó a equilibrar mi dieta mientras trabajaba largas horas. Mi nutricionista en línea diseñó un plan que me ayudó a perder peso y mejorar mi salud en general.",
-    },
-    {
-        name: "Laura Martínez",
-        image: "/testimonials/lm.jpg",
-        career: "Estudiante universitaria",
-        rating: "5.0",
-        testimoni:
-            "El estres de la universidad afectó  a mi dieta, NutriCare me dio un enfoque realista y asequible para la nutrición. Perdí peso, me siento más concentrada y confiada.",
-    },
-    {
-        name: "Laura Martínez",
-        image: "/testimonials/lm.jpg",
-        career: "Estudiante universitaria",
-        rating: "5.0",
-        testimoni:
-            "El estres de la universidad afectó  a mi dieta, NutriCare me dio un enfoque realista y asequible para la nutrición. Perdí peso, me siento más concentrada y confiada.",
     },
     {
         name: "Laura Martínez",

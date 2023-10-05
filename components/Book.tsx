@@ -17,7 +17,7 @@ export const Booking = () => {
 
     return (
         <>
-            <div className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14 py-12 pt-32 mb-12" id="book">
+            <div className="bg-gradient-to-b from-white-500 to-white-500 w-full py-14 py-16 pt-32 pb-32 mb-12 pb-12 mt-12" id="book">
                 <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
                     <div className="mb-12">
                         <ScrollAnimationWrapper className="relative w-full mt-2 mb-8">
@@ -42,14 +42,14 @@ export const Booking = () => {
             </div>
             {
                 active && (
-                    <div className="bg-gradient-to-b from-white-300 to-gray-500 w-full pt-16 mb-12" id="book">
-                        <div className="max-w-screen-xl  sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
+                    <div className="bg-gradient-to-b from-white-300 to-white-500 w-full mb-12" id="book">
+                        <div className="max-w-screen-xl  sm:px-8 lg:px-16 w-full text-center justify-center">
                             <div className="mb-12">
                                 <ScrollAnimationWrapper className="relative w-full mt-2 mb-8">
                                     <motion.div variants={scrollAnimation} custom={{ duration: 3 }}>
-                                        <div className="absolute rounded-xl sm:px-12 w-full justify-between items-center z-10 bg-white-500 border-2 border-gray-500 hover:border-nutricare-100 transition-all">
-                                            <div className="mb-6 sm:mb-0 mt-2">
-                                                <div className="h-auto w-auto"><CalendlyWidget addClass="h-96" /></div>
+                                        <div className="absolute rounded-xl sm:px-12 w-full  justify-between items-center z-10 bg-white-500 border-2 border-gray-500 hover:border-nutricare-100 transition-all">
+                                            <div className="mb-1 sm:mb-0 mt-1 bg-gradient-to-b from-white-300 to-nutricare-500">
+                                                <div className="h-auto w-auto "><CalendlyWidget addClass="h-96" /></div>
                                             </div>
                                         </div>
                                         <div

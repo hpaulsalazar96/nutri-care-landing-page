@@ -73,7 +73,7 @@ export const Hero = ({ }) => {
                                     />)
                                     :
                                     (<Image
-                                        src="/assets/hero_min.png"
+                                        src="/assets/heromin.png"
                                         alt="Nutri Care Hero"
                                         quality={100}
                                         width={612}

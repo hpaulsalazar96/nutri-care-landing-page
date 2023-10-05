@@ -39,7 +39,7 @@ export const Feature = () => {
 
     return (
         <div
-            className="max-w-screen-xl mt-8 mb-6 sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-16 mx-auto mb-12"
+            className="bg-gradient-to-b from-white-300 to-white-500 max-w-screen-xl mt-8 mb-6 sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-16 mx-auto mb-12"
             id="feature"
         >
             {!smallScreen ? <div className="pt-28" /> : <div className="pt-4" />}
