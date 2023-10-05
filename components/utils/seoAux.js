@@ -87,7 +87,7 @@ export const defaultMeta = {
   title: 'Nutri Care',
   siteName: 'nutri.care',
   description:
-    'Tu nutricionista en linea, nutricionista online, nutricionista quito',
+    'Tu nutricionista en linea, nutricionista online, nutricionista quito, nutricionista latinoamerica, nutricionista ecuador',
   url: 'https://nutri.care',
   type: 'website',
   robots: 'follow, index',
