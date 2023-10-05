@@ -55,7 +55,7 @@ export const Hero = ({ }) => {
                         <p className="text-nutricare-200 mt-4 mb-6">
                             Accede a una primera cita para evaluar de tus necesidades nutricionales.
                         </p>
-                        <ButtonScroll>Agendar Ahora</ButtonScroll>
+                        <ButtonScroll addClass="text-white-500 bg-nutricare-100">Agendar Ahora</ButtonScroll>
                     </div>
                     <div className="flex w-full">
                         <motion.div className="w-full" variants={scrollAnimation}>
