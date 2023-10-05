@@ -10,7 +10,7 @@ import Link from "next/link";
 import { socialLinks } from '../utils/socialLinks'
 import { useEffect, useState } from "react";
 import { SocialLink } from "../misc/SocialLink";
-import { ScrollToLinkSimple } from './../scrollers/ScrollToLink'
+import { ScrollToLinkSimple } from '../scrollers/ScrollToLink'
 
 export const Footer = () => {
 

@@ -5,7 +5,7 @@ import logoNC from '@/public/assets/Logo.svg'
 import { useEffect, useState } from "react"
 import { MenuDropdown } from "../misc/MenuDropdown";
 import { InformationCircleIcon, SwatchIcon, UserGroupIcon, CurrencyDollarIcon, BookmarkIcon } from "@heroicons/react/20/solid";
-import { ScrollToLink, ScrollToLinkMobile, ScrollToUnselect } from './../scrollers/ScrollToLink'
+import { ScrollToLink, ScrollToLinkMobile, ScrollToUnselect } from '../scrollers/ScrollToLink'
 import { ButtonScroll } from '../buttons/ButtonScroll';
 
 export const Header = () => {
