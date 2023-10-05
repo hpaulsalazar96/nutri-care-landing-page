@@ -28,7 +28,7 @@ export const DetailIcon: React.FC<Props> = ({ index, name, description, Icon }) 
                 }}
             >
                 <div className="flex mx-auto w-40 sm:w-auto ">
-                    <div className="flex items-center justify-center bg-orange-100 w-12 h-12 mr-6 rounded-full transition ease-in-out shadow shadow-md hover:drop-shadow-[0_0_0.3rem_#07cce3]">
+                    <div className="flex items-center justify-center bg-orange-100 w-12 h-12 mr-6 rounded-full transition ease-in-out shadow-md hover:drop-shadow-[0_0_0.3rem_#07cce3]">
                         <Icon className="h-6 w-6 fill-nutricare-200 hover:fill-nutricare-100 transition ease-in-out delay-25" />
                     </div>
                     <div className="flex flex-col">

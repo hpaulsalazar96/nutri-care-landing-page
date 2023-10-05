@@ -57,7 +57,7 @@ export const Footer = () => {
                             <strong>Nutricare</strong> es una agencia de consultoría nutricional que brinda un seguimiento nutricional integral  a sus pacientes, de manera <strong>presencial</strong> y <strong>virtual</strong>.
                         </p>
                         {smallScreen &&
-                            (<div className="flex w-full mt-6 mb-8 flex items-center ml-2">
+                            (<div className="flex items-center w-full mt-6 mb-8 ml-2">
                                 <p className="text-nutricare-200 text-sm">Siguenos:</p>
                                 <div className="flex w-full">
                                     <SocialLink url={whatsappLink} path={whatsappIcon} description="Siguenos en Whatsapp" />
@@ -98,7 +98,7 @@ export const Footer = () => {
                         {
                             !smallScreen &&
                             (
-                                <div className="flex w-full mt-6 mb-8 flex items-center">
+                                <div className="flex items-center w-full mt-6 mb-8">
                                     <p className="text-nutricare-200 text-sm">Siguenos:</p>
                                     <div className="flex w-full">
                                         <SocialLink url={whatsappLink} path={whatsappIcon} description="Siguenos en Whatsapp" />
@@ -135,7 +135,7 @@ export const Footer = () => {
                     </div>
                 </div>
 
-                <div className="max-w-screen-xl w-full mx-auto px-6 sm:px-8 lg:px-16 grid grid-rows-12 mx-auto pt-1">
+                <div className="max-w-screen-xl w-full px-6 sm:px-8 lg:px-16 grid grid-rows-12 mx-auto pt-1">
                     <div className="row-span-2 sm:col-span-4 col-start-1 col-end-4 sm:col-end-5 flex flex-col items-start ">
                         <p className="text-nutricare-200">©{new Date().getFullYear()} - Nutri.Care </p>
                         <p className="text-nutricare-200">Desarrollado por
