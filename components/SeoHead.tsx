@@ -37,11 +37,14 @@ export const SeoHead = (props: any) => {
             <meta property='og:title' content={meta.title} />
             <meta name='image' property='og:image' content={meta.image} />
             {/* Twitter */}
-            <meta name='twitter:card' content='summary_large_image' />
-            <meta name='twitter:site' content='@F2aldi' />
-            <meta name='twitter:title' content={meta.title} />
-            <meta name='twitter:description' content={meta.description} />
-            <meta name='twitter:image' content={meta.image} />
+            {
+                /**<meta name='twitter:card' content='summary_large_image' />
+                <meta name='twitter:site' content='@xusername' />
+                <meta name='twitter:title' content={meta.title} />
+                <meta name='twitter:description' content={meta.description} />
+                <meta name='twitter:image' content={meta.image} />
+                */
+            }
             {meta.date && (
                 <>
                     <meta property='article:published_time' content={meta.date} />
@@ -62,13 +65,13 @@ export const SeoHead = (props: any) => {
                 <link key={linkProps.href} {...linkProps} />
             ))}
             {/* Windows 8 app icon */}
-            <meta name='msapplication-TileColor' content='#2F2E41' />
+            <meta name='msapplication-TileColor' content='#1F2E41' />
             <meta
                 name='msapplication-TileImage'
                 content='/favicon/ms-icon-144x144.png'
             />
             {/* Accent color on supported browser */}
-            <meta name='theme-color' content='#2F2E41' />
+            <meta name='theme-color' content='#1F2E41' />
         </Head>
     );
 };

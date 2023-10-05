@@ -7,9 +7,10 @@ import { SeoHead } from "@/components/SeoHead"
 import { Testimonial } from "@/components/Testimonial"
 
 const Home = () => {
+    const date = new Date("2023-10-05");
     return (
         <>
-            <SeoHead title='Nutri Care Nutritional Landing Page' />
+            <SeoHead title='Nutri Care - Nutricionista en linea' date={date}/>
             <Layout addClass="bg-gradient-to-b from-white-300 to-white-500">
                 <Hero />
                 <Feature />

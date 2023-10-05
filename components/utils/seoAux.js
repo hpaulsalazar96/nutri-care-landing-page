@@ -85,12 +85,12 @@ export const favicons = [
 
 export const defaultMeta = {
   title: 'Nutri Care',
-  siteName: 'NutriCare',
+  siteName: 'nutri.care',
   description:
-    'Tu nutricionista en linea',
+    'Tu nutricionista en linea, nutricionista online, nutricionista quito',
   url: 'https://nutri.care',
   type: 'website',
   robots: 'follow, index',
   image: '@/public/assets/Logo.svg',
-  author: 'Henry Salazar'
+  author: 'Henry Paul Salazar',
 };
