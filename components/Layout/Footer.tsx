@@ -41,7 +41,7 @@ export const Footer = () => {
 
     return (
         <>
-            <div className="bg-white-300 pt-44 pb-36" id="footer">
+            <div className="bg-gradient-to-b from-white-500 to-nutricare-500 pt-44 pb-36" id="footer">
                 <div className={screenSize}>
                     <div className="row-span-2 sm:col-span-4 col-start-1 col-end-4 sm:col-end-5 flex flex-col mx-2">
                         <div className="">
@@ -137,8 +137,8 @@ export const Footer = () => {
 
                 <div className="max-w-screen-xl w-full mx-auto px-6 sm:px-8 lg:px-16 grid grid-rows-12 mx-auto pt-1">
                     <div className="row-span-2 sm:col-span-4 col-start-1 col-end-4 sm:col-end-5 flex flex-col items-start ">
-                        <p className="text-nutricare-300">©{new Date().getFullYear()} - Nutri.Care </p>
-                        <p className="text-nutricare-300">Desarrollado por
+                        <p className="text-nutricare-200">©{new Date().getFullYear()} - Nutri.Care </p>
+                        <p className="text-nutricare-200">Desarrollado por
                             <strong className="transition ease-in-out delay-50 hover:text-nutricare-200 ">
                                 <Link href="https://github.com/hpaulsalazar96/" target="_blank">
                                     @hpaulsalazar96

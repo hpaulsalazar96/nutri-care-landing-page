@@ -46,7 +46,9 @@ const config: Config = {
       nutricare: {
         100: "#07cce3",
         200: "#1F2E41",
-        300: "#8190a3"
+        300: "#8190a3",
+        400: "#b4e9f0",
+        500: "#87dbe6"
       },
     },
     extend: {},
