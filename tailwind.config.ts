@@ -53,11 +53,6 @@ const config: Config = {
     },
     extend: {},
   },
-  variants: {
-    extend: {
-      boxShadow: ["active", "hover"],
-    },
-  },
   plugins: [],
 }
 export default config
